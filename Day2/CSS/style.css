@@ -1,133 +1,121 @@
-/* Styles for the entire page */
-body {
-    background-color: #bbbaef58;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* General Body Styling */
+   body {
+    background-color: #bbbaef58; /* Light purple semi-transparent background */
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-/* =============================
-   Form Container Layout
-   ============================= */
-
+/* Main Form Container Layout */
 .form-container {
-    width: 700px; /* Adjusted for form + image side-by-side */
-    margin: 80px auto;
-    background-color: hsl(200, 100%, 97%);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 700px; /* Width of the entire login + image box */
+    margin: 80px auto; /* Centered on page with top margin */
+    background-color: hsl(200, 100%, 97%); /* Light background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+    overflow: hidden; /* Ensures children don’t overflow the border-radius */
 }
 
-/* Inner split: form left, image right */
+/* Split Layout for Form + Image */
 .form-content {
-    display: flex;
-    flex-direction: row;
+    display: flex; /* Side-by-side layout */
+    flex-direction: row; /* Horizontal direction (default) */
 }
 
-/* Left side: form */
+/* Left side: actual form */
 .form-fields {
-    flex: 1;
-    padding: 20px;
-    background-color: hsl(200, 100%, 97%);
+    flex: 1; /* Takes 50% width */
+    padding: 20px; /* Space around form fields */
+    background-color: hsl(200, 100%, 97%); /* Match container bg */
 }
 
-/* Right side: image */
+/* Right side: image section */
 .form-image {
-    flex: 1;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 1; /* Takes 50% width */
+    background-color: #ffffff; /* White background for image contrast */
+    display: flex; /* Flex to center image */
+    align-items: center; /* Vertically center image */
+    justify-content: center; /* Horizontally center image */
 }
 
 .form-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    /* border-radius: 0 10px 10px 0; Match container corners on right side */
+    width: 100%; /* Make image fill horizontally */
+    height: 100%; /* Make image fill vertically */
+    object-fit: contain; /* Keep full image visible without distortion */
 }
 
-/* =============================
-   Form Elements Styling
-   ============================= */
-
+/* Heading Styling */
 h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    text-align: center; /* Center the heading text */
+    color: #333; /* Dark gray for clarity */
+    margin-bottom: 20px; /* Space below heading */
 }
 
+/* Form Fields Styling */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space between each input field */
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #555;
+    display: block; /* Each label takes full line */
+    margin-bottom: 5px; /* Space below label */
+    font-size: 14px; /* Standard font size */
+    color: #555; /* Medium gray color */
 }
 
 input {
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    width: 100%; /* Inputs span full width */
+    padding: 7px; /* Inner spacing for typing comfort */
+    font-size: 14px; /* Text inside input */
+    border-radius: 5px; /* Rounded input boxes */
+    border: 1px solid #ccc; /* Light border */
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
 
-/* Show Password */
+/* Show Password Checkbox */
 .show-password {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 15px;
-    font-size: 14px;
+    display: flex; /* Align checkbox and label side by side */
+    align-items: center; /* Vertically align */
+    gap: 6px; /* Space between checkbox and label */
+    margin-bottom: 15px; /* Space below */
+    font-size: 14px; /* Font size for label */
 }
 
 .show-password input[type="checkbox"] {
-    width: auto;
-    margin: 0;
+    width: auto; /* Natural width */
+    margin: 0; /* Remove extra spacing */
 }
 
 .show-password label {
     margin: 0;
-    display: inline;
+    display: inline; /* Keep label inline with checkbox */
 }
 
-/* =============================
-   Button Styling
-   ============================= */
-
+/* Button Styling */
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #827FFE;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    width: 100%; /* Full width button */
+    padding: 10px; /* Space inside the button */
+    background-color: #827FFE; /* Soft purple-blue color */
+    color: white; /* White text */
+    border: none; /* No default border */
+    border-radius: 5px; /* Rounded edges */
+    font-size: 16px; /* Clear and visible font */
+    cursor: pointer; /* Pointer on hover */
 }
 
 button:hover {
-    background-color: #5957fe;
+    background-color: #5957fe; /* Darker shade on hover */
 }
 
-/* =============================
-   Footer Links
-   ============================= */
-
+/* Footer Links */
 .form-footer {
-    padding: 5px;
-    font-size: 13px;
-    text-align: center;
+    padding: 5px; /* Top/bottom spacing */
+    font-size: 13px; /* Small text */
+    text-align: center; /* Center links */
 }
 
 .form-footer a {
-    color: #007BFF;
-    text-decoration: none;
-    margin: 0 5px;
+    color: #007BFF; /* Standard blue link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Spacing between links */
 }
