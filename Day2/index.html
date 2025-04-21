@@ -9,30 +9,53 @@
 </head>
 <body>
   <div class="form-container">
-    <h2>Login</h2>
-
-    <form>
-      <!-- Name field -->
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
+    <div class="form-content">
+      <!-- Left: Login Form -->
+      <div class="form-fields">
+        <h2>Login</h2>
+        <form>
+          <!-- Name -->
+          <!-- <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div> -->
+  
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+  
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+          </div>
+  
+          <!-- Show Password -->
+          <div class="form-group show-password">
+            <input type="checkbox" id="show-password">
+            <label for="show-password">Show Password</label>
+          </div>
+  
+          <!-- Button -->
+          <button type="submit">Login</button>
+  
+          <!-- Footer Links -->
+          <div class="form-footer">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Don't have an account? Create</a>
+          </div>
+        </form>
       </div>
-
-      <!-- Email field-->
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email">
+  
+      <!-- Right: Image -->
+      <div class="form-image">
+        <img src="assets/images1.png" alt="Login illustration">
       </div>
-
-      <!-- Password field-->
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password">
-      </div>
-
-      <!-- Submit button -->
-      <button type="submit">Login</button>
-    </form>
+    </div>
   </div>
+  
 </body>
+
 </html>
