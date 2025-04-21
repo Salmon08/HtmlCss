@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML Elements</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    a {
+      color: blue;
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    input {
+      padding: 6px;
+    }
+
+    .box {
+      background-color: #eee;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Main Heading (h1)</h1>
+  <h2>Sub Heading (h2)</h2>
+  <h3>Section Heading (h3)</h3>
+  <h4>Subsection (h4)</h4>
+  <h5>Smaller Heading (h5)</h5>
+  <h6>Smallest Heading (h6)</h6>
+
+  <p>This is a paragraph with <i>italic</i> text.</p>
+
+  <a href="https://www.gettyimages.in/photos/rohit-sharma-batting" target="_blank">Rohit Sharma Batting Gallery</a>
+
+  <br><br>
+
+  <button onclick="handleClick()">Click Me!</button>
+
+  <br><br>
+
+  <input type="text" placeholder="Type here...">
+
+  <br><br>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoC8JTKma0eAFZ8aSSyY6TdOHJv1X9-q74pw&s" alt="Rohit Sharma Batting" width="300">
+
+
+  <br><br>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9031780661483!2d72.83472641498173!3d19.07283098709106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce37fa8373b3%3A0x79f62c7e14c7097!2sIndia!5e0!3m2!1sen!2sin!4v1617776584015!5m2!1sen!2sin" width="300" height="200"></iframe>
+
+  <br><br>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>30</td>
+    </tr>
+  </table>
+
+  <div class="box">This is a simple div box.</div>
+
+  <script>
+    function handleClick() {
+      alert("Button clicked!");
+    }
+  </script>
+</body>
+</html>

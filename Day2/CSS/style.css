@@ -1,0 +1,80 @@
+/* Styles for the entire page */
+body {
+    background-color: #bbbaef58; /* Light semi-transparent purple background for soft tone */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* =============================
+   Form Container
+   ============================= */
+
+/* Style for the main form container */
+.form-container {
+    width: 350px; /* Fixed width for the form */
+    margin: 80px auto; /* Centered horizontally with top margin */
+    background-color: hsl(200, 100%, 97%); /* Very light blue for contrast */
+    padding: 20px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners for smooth design */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+/* =============================
+   Heading
+   ============================= */
+
+/* Form title style */
+h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark gray for high readability */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* =============================
+   Form Elements
+   ============================= */
+
+/* Container for each label and input pair */
+.form-group {
+    margin-bottom: 15px; /* Vertical space between form fields */
+}
+
+/* Label styling */
+label {
+    display: block; /* Makes label take full width */
+    margin-bottom: 5px; /* Space between label and input */
+    font-size: 14px; /* Reasonable label font size */
+    color: #555; /* Medium gray for subtle clarity */
+}
+
+/* Input field styling */
+input {
+    width: 100%; /* Full width to match container */
+    padding: 7px; /* Internal padding for comfort */
+    font-size: 14px; /* Readable text size */
+    border-radius: 5px; /* Slightly rounded corners */
+    border: 1px solid #ccc; /* Light border for definition */
+    box-sizing: border-box; /* Include padding and border in element width */
+}
+
+/* =============================
+   Button Styling
+   ============================= */
+
+/* Submit button styling */
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Comfortable padding */
+    background-color: #827FFE; /* Soft, pleasant blue-purple tone */
+    color: white; /* White text for contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Slightly larger font for visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #5957fe; /* Soft, pleasant blue-purple tone */
+}
