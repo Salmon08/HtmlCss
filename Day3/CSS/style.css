@@ -1,0 +1,125 @@
+/* Remove default margin and set global font */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*  Navbar Styles  */
+
+.navbar {
+  background-color: #3eaad3;         /* Navbar background color */
+  height: 50px;                      /* Fixed height for navbar */
+  position: fixed;                   /* Fix navbar at the top of the page */
+  width: 100%;                       /* Full width */
+  top: 0;                            /* Align to top of viewport */
+  display: flex;                     /* Flexbox layout */
+  justify-content: space-between;   /* Space between left and right sections */
+  align-items: center;              /* Vertically center items */
+  padding: 0 20px;                   /* Horizontal padding */
+  box-sizing: border-box;           /* Include padding in height/width */
+  z-index: 1000;                     /* Ensure navbar stays above other content */
+}
+
+/*  Navbar Left Links  */
+
+.nav-left a {
+  position: relative;               /* For pseudo-element positioning */
+  color: white;                     /* Link color */
+  text-decoration: none;           /* Remove underline */
+  margin-right: 15px;              /* Space between links */
+  padding: 10px 12px;              /* Clickable padding area */
+  border-radius: 4px;              /* Rounded corners */
+  font-size: 14px;                 /* Font size */
+  transition: color 0.3s ease;     /* Smooth color transition */
+}
+
+/* Underline effect on hover using ::after */
+.nav-left a::after {
+  content: "";                     /* Required for pseudo-element */
+  position: absolute;             /* Position relative to the link */
+  left: 0;
+  bottom: 4px;                    /* Slightly above the bottom edge */
+  width: 0%;                      /* Start hidden */
+  height: 2px;                    /* Thickness of underline */
+  background-color: rgb(227, 16, 16); /* Red underline */
+  transition: width 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Animate underline on hover */
+.nav-left a:hover::after {
+  width: 100%;                    /* Full underline width */
+}
+
+/* Background color change on hover */
+.nav-left a:hover {
+  background-color: #2f91b6;     /* Slightly darker blue */
+}
+
+/* Navbar Right Section (Search & Notifications) */
+
+.nav-right {
+  position: sticky;              /* Sticky inside scrollable container (not effective here) */
+  top: 0;
+  display: flex;                 /* Align children horizontally */
+  align-items: center;          /* Vertically center */
+}
+
+/* Search Box Styling */
+
+.search-box {
+  position: relative;           /* To position search icon inside */
+}
+
+/* Input field inside search box */
+.search-box input {
+  padding: 8px 30px 8px 10px;   /* Padding to make room for icon */
+  border: none;                 /* Remove default border */
+  border-radius: 4px;           /* Rounded corners */
+  font-size: 14px;              /* Text size */
+  width: 160px;                 /* Input width */
+}
+
+/* Search icon inside input */
+.search-icon {
+  position: absolute;           /* Place on top of input */
+  right: 8px;                   /* Align to right side */
+  top: 50%;                     /* Vertically center */
+  transform: translateY(-50%);  /* Fine-tune vertical alignment */
+  color: #888;                  /* Light gray icon */
+  pointer-events: none;         /* Clicks go through to input */
+}
+
+/* Notification Icon Styling  */
+
+.notification {
+  display: inline-flex;         /* Align icon and badge horizontally */
+  align-items: center;          /* Vertically center content */
+  position: relative;           /* For badge positioning */
+  margin-left: 15px;            /* Space between icons */
+}
+
+/* Notification icon itself */
+.notification i {
+  font-size: 24px;              /* Icon size */
+  margin-right: 8px;            /* Space between icon and badge */
+}
+
+/* Badge on notification icon */
+.notification .badge {
+  position: absolute;           /* Position on top of icon */
+  top: -5px;                    /* Move up */
+  right: -5px;                  /* Move to the right */
+  background-color: red;        /* Red background */
+  color: white;                 /* White text */
+  font-size: 12px;              /* Small font */
+  padding: 4px 8px;             /* Space around number */
+  border-radius: 50%;           /* Make it round */
+}
+
+/* Paragraph Content Styling */
+
+p {
+  margin-top: 60px;             /* Push paragraph below the fixed navbar */
+  line-height: 1.6;             /* Better line spacing */
+  /* font-size: 16px; */        /* Optional: enable if needed */
+}
