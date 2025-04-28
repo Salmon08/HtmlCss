@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 9px;
+}
+
+/* Container Layout  */
+.container {
+    display: flex;              /* Flex container for vertical stacking */
+    height: 100vh;              /* Full viewport height */
+    flex-direction: column;     /* Stack children vertically */
+}
+
+/*  Upper Section  */
+.upper {
+    height: 25%;                /* 25% of total height */
+    background-color: #EFF8FF;  /* Light blue background */
+    color: rgb(30, 27, 27);      /* Text color */
+}
+
+/*  Middle Section  */
+.middle {
+    height: 25%;                /* 25% of total height */
+    flex: 1;                    /* Allow to grow if needed */
+    background-color: #EFF8FF;  /* Light blue background */
+    color: rgb(18, 16, 16);      /* Text color */
+}
+
+/*  Lower Section (Split)  */
+.lower {
+    height: 50%;                /* 50% of total height */
+    flex: 2;                    /* Take double space compared to others */
+    display: flex;              /* Flex container for inner division */
+    background-color: rgb(86, 86, 186); /* Blue background */
+}
+
+/*  Left Hand Side (lhs)  */
+.lhs {
+    flex: 1;                    /* 1 part out of 3 */
+    background-color: #85BEF1;  /* Light blue background */
+    color: rgb(14, 11, 11);      /* Text color */
+    display: flex;              /* Flexbox to center content */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+}
+
+/*  Right Hand Side (rhs)  */
+.rhs {
+    flex: 2;                    /* 2 parts out of 3 */
+    display: flex;              /* Flex container */
+    flex-direction: column;     /* Stack children vertically */
+    justify-content: space-between; /* Space between inner items */
+    background-color: #85BEF1;  /* Light blue background */
+}
+
+/*  RHS Item 1 (Top box)  */
+.rhs-item1 {
+    background-color: #ffe4c4;  /* Light orange background */
+    flex: 3;                    /* Take 3 parts of flex ratio */
+    display: flex;              /* Flex to align content */
+    color: rgb(11, 9, 9);        /* Text color */
+    padding: 10px;              /* Inner spacing */
+    margin: 5px;                /* Outer spacing */
+    justify-content: left;      /* Align content to left */
+    align-items: center;        /* Center vertically */
+}
+
+/*  RHS Item 2 (Bottom box)  */
+.rhs-item2 {
+    background-color: #85BEF1;  /* Light blue background */
+    flex: 2;                    /* Take 2 parts of flex ratio */
+    color: rgb(12, 11, 11);      /* Text color */
+    margin: 5px;                /* Outer spacing */
+    margin-top: 0;              /* No margin on top */
+}
+
+/*  Layout Borders  */
+/* Border for main sections */
+.container > div,
+.lower > .lhs,
+.lower > .rhs {
+  border: 2px solid #dddddd; /* Light gray border */
+}
+
+/* Remove top border for lower sections */
+.lower > .lhs,
+.lower > .rhs {
+  border-top: none;
+}
+
+/*  Box Styles  */
+.box {
+    width: 40px;               /* Box width */
+    height: 40px;              /* Box height */
+    border: 1px solid #ccc;    /* Light gray border */
+    background-color: #95C1FF; /* Light blue background */
+    display: flex;             /* Flexbox for centering */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    margin: 2px;               /* Small gap around box */
+}
+
+/*  Upper Flex Groups  */
+.upper1 {
+    display: flex;             /* Flex container */
+    justify-content: start;    /* Align to left */
+}
+
+.upper2 {
+    display: flex;             
+    justify-content: center;   /* Center horizontally */
+}
+
+.upper3 {
+    display: flex;
+    justify-content: end;      /* Align to right */
+}
+
+/*  Middle Flex Groups  */
+.middle1 {
+    display: flex;
+    justify-content: space-between; /* Even space between items */
+}
+
+.middle2 {
+    display: flex;
+    justify-content: space-around;  /* Even space around items */
+}
+
+.middle3 {
+    display: flex;
+    justify-content: space-evenly;  /* Equal space around and between */
+}
+
+/*  Lower Grid  */
+.lower1 {
+    display: grid;                              /* Use Grid Layout */
+    grid-template-columns: repeat(5, 1fr);      /* 5 equal columns */
+}
