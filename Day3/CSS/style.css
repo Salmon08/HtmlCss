@@ -58,7 +58,7 @@ body {
 /* Navbar Right Section (Search & Notifications) */
 
 .nav-right {
-  position: sticky;              /* Sticky inside scrollable container (not effective here) */
+  /* position: sticky;              Sticky inside scrollable container (not effective here) */
   top: 0;
   display: flex;                 /* Align children horizontally */
   align-items: center;          /* Vertically center */
@@ -82,7 +82,7 @@ body {
 /* Search icon inside input */
 .search-icon {
   position: absolute;           /* Place on top of input */
-  right: 8px;                   /* Align to right side */
+  right: 110px;                   /* Align to right side */
   top: 50%;                     /* Vertically center */
   transform: translateY(-50%);  /* Fine-tune vertical alignment */
   color: #888;                  /* Light gray icon */
