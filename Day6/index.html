@@ -16,7 +16,7 @@
       <ul class="navbar-nav me-auto">
         <li class="nav-item"><a class="nav-link active" href="#mainCarousel">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#cardsSection">Link</a></li>
-        <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+        <li class="nav-item"><a class="nav-link text-secondary" style="cursor: not-allowed">Disabled</a></li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search">
@@ -33,8 +33,9 @@
     <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
     <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
   </div>  
-  <div class="carousel-inner">
+  <div class="carousel-inner ">
     <div class="carousel-item active bg-secondary text-white" style="height: 300px;">
+      <!-- <img src="https://images.unsplash.com/photo-1580166993469-2e28abcade05?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 object-fit-cover" alt="..."> -->
       <div class="container h-100 d-flex flex-column justify-content-center align-items-center p-5">
         <h2>Welcome to Our Website</h2>
         <p class="lead">Simple. Modern. Fast. Get started with ease.</p>
@@ -74,11 +75,16 @@
         <div class="card-img-top bg-dark text-white d-flex justify-content-center align-items-center" style="height: 200px;">
           <img src="https://blog.udemy.com/wp-content/uploads/2014/04/bigstock-Word-Cloud-Html-41531857.jpg" alt="Thumbnail" class="img-fluid h-100 w-100 object-fit-cover">
         </div>
-        <div class="card-body">
+        <div class="card-body ">
           <p class="card-text">Learn the essentials of HTML5 — from semantic tags to forms and media embedding. Build solid foundations for every web project.</p>
-          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
-          <button class="btn btn-secondary btn-sm">Edit</button>
-          <small class="text-muted float-end">9 mins</small>
+       <div class="d-flex justify-content-between align-items-center">
+          <div class="input-group" role="group">
+        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
+        <button class="btn btn-outline-dark btn-sm">Edit</button>
+      </div>
+          <!-- <small class="text-muted float-end">9 mins</small> -->
+           <span class="badge bg-secondary float-end">9 mins</span>
+           </div>
         </div>
       </div>
     </div>
@@ -91,9 +97,14 @@
         </div>
         <div class="card-body">
           <p class="card-text">Discover how to simplify your frontend workflow using modern CSS frameworks. Improve efficiency and reduce repetitive styling across your projects.</p>
-          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
-          <button class="btn btn-secondary btn-sm">Edit</button>
-          <small class="text-muted float-end">9 mins</small>
+           <div class="d-flex justify-content-between align-items-center">
+          <div class="input-group" role="group">
+        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
+        <button class="btn btn-outline-dark btn-sm">Edit</button>
+      </div>
+          <!-- <small class="text-muted float-end">9 mins</small> -->
+           <span class="badge bg-secondary float-end">9 mins</span>
+           </div>
         </div>
       </div>
     </div>
@@ -106,9 +117,14 @@
         </div>
         <div class="card-body">
           <p class="card-text">Build a real-world landing page using HTML and Bootstrap. Follow step-by-step instructions to structure, style, and launch your site.</p>
-          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
-          <button class="btn btn-secondary btn-sm">Edit</button>
-          <small class="text-muted float-end">9 mins</small>
+           <div class="d-flex justify-content-between align-items-center">
+          <div class="input-group" role="group">
+        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#viewModal">View</button>
+        <button class="btn btn-outline-dark btn-sm">Edit</button>
+      </div>
+          <!-- <small class="text-muted float-end">9 mins</small> -->
+           <span class="badge bg-secondary float-end">9 mins</span>
+           </div>
         </div>
       </div>
     </div>
@@ -118,7 +134,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">View Page</h5>
